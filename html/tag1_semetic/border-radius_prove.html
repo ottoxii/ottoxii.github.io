@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+/*        class selector*/
+        .container{
+            width:600px;
+            height:800px;
+            border:solid 30px;
+            
+            border-top-left-radius:200px;
+            border-bottom-right-radius:200px 100px;
+        }
+        .circle{
+            width:400px;
+            height:400px;
+            border:solid 30px red;
+            border-radius:50%;
+            position:absolute;
+            top:7px;
+            left:9px;
+        }
+        .ellipse{
+            width:400px;
+            height:200px;
+            border:solid 30px blue;
+            
+            border-radius: 200px/100px;
+            position:absolute;
+            top:609px;
+            left:207px;
+        }
+    
+    </style>
+</head>
+<body>
+<!--        .container>.cirle+ellipse-->
+    <div class="container">
+        <div class="circle"></div>
+        <div class="ellipse"></div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>
