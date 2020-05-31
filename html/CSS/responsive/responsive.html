@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        /*        <576px */
+        div {
+            height: 200px;
+            border: solid;
+            background-color: tomato;
+
+        }
+
+        div:before {
+            content: 'small phone';
+            color: white;
+        }
+
+        @media all and (min-width: 576px) {
+            div {
+                background-color: red;
+            }
+        }
+
+        @media print and (min-width: 576px) {
+            div {
+                background-color: blue;
+            }
+        }
+
+        @media all and (min-width: 768px) {
+            div {
+                display: inline-block;
+                width: 49%;
+            }
+        }
+
+        @media screen and (min-width: 992px) {
+            div {
+                width: 33%;
+                background-color: blue;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            div {
+                width: 33%;
+                background-color: blue;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <ul>
+        <li>responsive design is letting our design to fit into different size of screens</li>
+        <li>we do "monile-first"which means we will design interface for mobile first</li>
+    </ul>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body></html>

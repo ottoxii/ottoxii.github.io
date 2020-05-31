@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 800px;
+            height: 600px;
+            border: solid;
+        }
+
+        .item {
+            width: 200px;
+            height: 200px;
+        }
+
+        .item1 {
+            border: solid blue;
+            /*relative to its original position*/
+            position: relative;
+            left: 100px;
+        }
+
+        .item2 {
+            border: solid red;
+            /* absolute elemtns keep looking for its contariner with non-static position*/
+            position: absolute;
+            left: 100px;
+        }
+
+        .item3 {
+            border: solid yellow;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+    </div>
+
+</body>
+
+</html>
